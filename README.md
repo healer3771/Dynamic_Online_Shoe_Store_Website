@@ -1,4 +1,4 @@
-#Dynamic Online Shoe Store Website Development
+# Dynamic Online Shoe Store Website Development
 • Built an Online Shoe Store website from scratch using PHP , HTML, CSS, and SQL, featuring dynamic and interactive functionalities
 
 • Designed a user-friendly interface with login/logout capabilities and management tools for adding new shoe releases or removing out-of-stock items
