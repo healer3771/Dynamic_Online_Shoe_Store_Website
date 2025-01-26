@@ -1,0 +1,192 @@
+/*<!-- Name: Qadeer Ahmad
+Date: 11/17/2023
+Course Name: Internet Application
+Section: 001
+Assingment: Section 001 Unit 9 Assignment
+Email: qa9@njit.edu
+Login information for page is
+Email: john@example.com
+passw: s3sam3
+-->*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , #bd1f1f;
+    background-image:  url(images/backgroun1.jpg);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header p {
+  margin-left: 1500px ;
+}
+.logo img {
+    max-width: 60px;
+    float: left;
+    margin-left: 100px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin-right: 1200px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: auto;
+    margin-right: 20px ;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+main {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , #bd1f1f;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.description {
+    border: 2px solid #333; /* Add a border to the description */
+    padding: 10px;
+    font-family: 'Verdana', sans-serif; /* Change the font */
+    font-size: 18px; /* Change the font size */
+    background-color: lightblue;
+}
+
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+.shoe-name {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Times New Roman', serif; /* Change the font for shoe names */
+}
+
+.shoe-price {
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Courier New', monospace; /* Change the font for shoe prices */
+    color: #ff6600; /* Change the price color to orange */
+}
+/* Add this to your existing CSS or style.css */
+
+.label-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+}
+
+.label-text {
+    margin-bottom: 10px;
+}
+
+.barcode-image {
+    display: inline-block;
+}
+.story{
+    border: 4px solid #333;
+    background-color: rgb(99, 235, 212);
+}
+
+/* Shared table styles */
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .data-table th, 
+  .data-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Category table */
+  #categories-table {
+    background-color: #eee; 
+    margin-left: 30px;
+  }
+  
+  #categories-table th {
+    background-color: #555;
+    color: #fff;
+  }
+  
+  /* Shoes table */  
+  #shoes-table th {
+    background-color: #333;
+    color: #fff;
+  }
+  #shoes-table{
+    margin-left: 30px;
+    margin-bottom: 40px;
+  }
+  #shoes-table tr {
+    background-color: #f2f2f2;
+  }
+  .tableheader{
+    margin-left: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    border-bottom: 4px solid #333;
+  }
+  
+  .categories{
+    margin-left: 30px;
+    border: 4px solid #6d0101;
+    margin-right: 1765px;
+  }
+
+  .alert {
+    padding: 20px; 
+    background-color: #f44336;
+    color: white;
+    margin-bottom: 15px;
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right; 
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+  .styled-text {
+    font-family: Arial;
+    font-size: 16px;
+    color: blue;
+}

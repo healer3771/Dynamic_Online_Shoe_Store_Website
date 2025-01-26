@@ -1,0 +1,32 @@
+/*<!-- Name: Qadeer Ahmad
+Date: 11/17/2023
+Course Name: Internet Application
+Section: 001
+Assingment: Section 001 Unit 9 Assignment
+Email: qa9@njit.edu
+Login information for page is
+Email: john@example.com
+passw: s3sam3
+-->*/
+/* Style for the label container */
+        .label-container {
+            position: relative;
+            width: 400px; /* Adjust the width as needed */
+            margin: 0;
+        }
+main div{
+    list-style-type: none;
+}
+main div p{
+    margin-left: 50;
+    width: 500;
+}
+.shipping-label p {
+    font-size: 12px;
+    margin-left: 20px;
+    
+}
+main{
+    border: 2px solid;
+    width: 500px;
+}
