@@ -1,0 +1,660 @@
+/* RESET & GLOBAL LAYOUT */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    /* Global font, color, background */
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+    background: #f5f5f7;
+    color: #1d1d1f;
+    
+    /* Use Flexbox to keep footer pinned at bottom */
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+.modern-header {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.header-content {
+    /* If you want the content centered at 1200px max */
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #f5f5f7;
+    text-decoration: none;
+    font-size: 14px;
+    transition: opacity 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+/* MAIN CONTENT (flex: 1) to push footer down */
+.main-content {
+    flex: 1; /* Take up remaining space so footer sits at bottom */
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: -40px; /* Adjust this value to match header height */
+    padding: 100px 20px 40px; /* Extra top padding so content is below fixed header */
+}
+
+.outstory {
+    background: #fff;
+    flex: 1;
+    max-width: 1200px;
+    margin: 40px auto; /* spacing from other elements */
+    padding: 40px 30px;
+    border-radius: 18px; /* slightly rounder for modern look */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* same shadow as home.php */
+    line-height: 1.6;
+    color: #1d1d1f;
+  }
+  
+
+/* FOOTER */
+.modern-footer {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    padding: 20px 0;
+    color: #f5f5f7;
+    text-align: center;
+}
+
+/* WELCOME BANNER (home.php) */
+.welcome-banner {
+    margin-top: 80px; /* Adjust this value as needed */
+    background: #fff;
+    padding: 15px 30px;
+    border-radius: 12px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+/* STORE INFO & PRODUCT GRID (home.php) */
+.store-info {
+    background: #fff;
+    border-radius: 18px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.store-info h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.store-info address {
+    font-style: normal;
+    color: #86868b;
+    margin-bottom: 20px;
+}
+
+.description {
+    line-height: 1.5;
+    color: #1d1d1f;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-name {
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    color: #0071e3;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* LOGIN PAGE FORM */
+.login-form-section {
+    background: #fff;
+    max-width: 400px;
+    margin: 0 auto; /* Center horizontally */
+    padding: 30px 70px;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 100px; /* Space from the top */
+}
+
+.login-form-section h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.login-form label {
+    font-size: 14px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.login-form input[type="submit"] {
+    background: #0071e3;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-form input[type="submit"]:hover {
+    background: #005bb5;
+}
+
+.login-message {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #86868b;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* shipping page slyling */
+/* Shipping Container Styling */
+.shipping-container {
+    background: #fff;
+    max-width: auto;
+    margin: auto;
+    padding: 40px 60px;
+    border-radius: 18px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.shipping-container h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+/* Form elements */
+.shipping-container form label {
+    font-size: 14px;
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+
+.shipping-container form input,
+.shipping-container form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.shipping-container form input[type="submit"] {
+    background: #0071e3;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+.shipping-container form input[type="submit"]:hover {
+    background: #005bb5;
+}
+
+/* Error message styling */
+.error-message {
+    background: #ffe6e6;
+    color: #cc0000;
+    padding: 10px;
+    border: 1px solid #cc0000;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+
+/**********************************/
+/* SHIPPING LABEL PAGE STYLES     */
+/**********************************/
+.shipping-label-page {
+    /* If you want a patterned background, you can do:
+       background: url('images/pattern.jpg') repeat;
+       or use a solid color: */
+    background-color: #f5f5f7;
+  }
+  
+  /* Wrapper to align label card and barcode side-by-side */
+  .label-wrapper {
+    display: flex;
+    flex-wrap: wrap;           /* Allows wrapping on smaller screens */
+    gap: 40px;                 /* Space between the card and the barcode */
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
+    justify-content: center;   /* Center horizontally */
+    padding: 40px 20px;
+    background: none;          /* If you want to keep the background transparent */
+  }
+  
+  /* The label "card" */
+  .shipping-label-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 400px;              /* Fixed width for the label card; adjust as desired */
+    max-width: 100%;
+    line-height: 1.6;
+  }
+  
+  .shipping-label-card h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  /* Barcode container */
+  .barcode-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .barcode-image img {
+    max-width: 400px;  /* Keep the barcode a reasonable size */
+    width: 100%;
+    height: auto;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    background: #fff;
+    padding: 20px;
+  }
+  
+  /* ---------------------- */
+/* SHOES PAGE SPECIFIC    */
+/* ---------------------- */
+
+.shoes-page {
+    background: #f5f5f7;
+  }
+  
+  /* Container for shoes content */
+  .shoes-container {
+    background: #fff;
+    max-width: 2000px;
+    margin: 40px auto;
+    padding: 40px 80px;
+    border-radius: 18px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Table Header */
+  .tableheader {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* Category Heading */
+  .categories {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 30px 0 15px;
+    color: #333;
+  }
+  
+  /* Table Styling */
+  #shoes-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+  }
+  
+  #shoes-table th,
+  #shoes-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  #shoes-table th {
+    background-color: #0071e3;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  #shoes-table td {
+    font-size: 14px;
+    color: #1d1d1f;
+  }
+  
+  #shoes-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  #shoes-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Delete Button in Table */
+  #shoes-table input[type="submit"] {
+    background: #cf2b2b;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #shoes-table input[type="submit"]:hover {
+    background: #a30000;
+  }
+  
+  /* --------------------------- */
+/* CREATE PAGE SPECIFIC STYLES */
+/* --------------------------- */
+
+.create-page {
+    background: #f5f5f7;
+  }
+  
+  /* Container for the create form */
+  .create-container {
+    background: #fff;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px 50px;
+    border-radius: 18px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading for the create form */
+  .create-container h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+  
+  /* Form elements styling */
+  #create-container form,
+  #create-container form label,
+  #create-container form input,
+  #create-container form select,
+  #create-container form textarea {
+    font-family: inherit;
+  }
+  
+  /* Ensure labels are block-level with proper spacing */
+  .create-container form label {
+    font-size: 14px;
+    display: block;
+    margin: 15px 0 5px;
+  }
+  
+  /* Style for inputs and select boxes */
+  .create-container form input[type="text"],
+  .create-container form input[type="number"],
+  .create-container form select,
+  .create-container form textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for buttons */
+  #create-container form button,
+  #create-container form input[type="submit"] {
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  /* Reset button style */
+  #create-container form button {
+    background: #f5f5f7;
+    color: #333;
+    margin-right: 10px;
+  }
+  
+  /* Submit button style */
+  #create-container form input[type="submit"] {
+    background: #0071e3;
+    color: #fff;
+  }
+  
+  /* Hover effects for buttons */
+  #create-container form button:hover,
+  #create-container form input[type="submit"]:hover {
+    opacity: 0.8;
+  }
+  
+  /* Error message styling */
+  .error-message {
+    background: #ffe6e6;
+    color: #cc0000;
+    padding: 10px;
+    border: 1px solid #cc0000;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  /* Updated Button Styles for Create Page */
+.create-container form button,
+.create-container form input[type="submit"] {
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Reset Button Styles */
+.create-container form button {
+  background-color: #f5f5f7;
+  color: #333;
+  border-color: #ccc;
+  margin-right: 10px;
+}
+
+.create-container form button:hover {
+  background-color: #eaeaea;
+}
+
+/* Submit Button Styles */
+.create-container form input[type="submit"] {
+  background-color: #0071e3;
+  color: #fff;
+  border-color: #0071e3;
+}
+
+.create-container form input[type="submit"]:hover {
+  background-color: #005bb5;
+  border-color: #005bb5;
+}
+
+/* ------------------------------- */
+/* SHOE DETAILS PAGE STYLES        */
+/* ------------------------------- */
+
+.shoe-details-page {
+    background: #f5f5f7;
+  }
+  
+  /* Container for shoe details */
+  .details-container {
+    background: #fff;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px 30px;
+    border-radius: 18px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading for details */
+  .details-container h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Flex layout for image and data */
+  .shoe-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  /* Container for shoe image */
+  .shoe-image-container {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+  }
+  
+  /* Shoe image styling */
+  .shoe-image-container img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Container for shoe data */
+  .shoe-data {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  /* Table Styling */
+  #shoes-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  #shoes-table th,
+  #shoes-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  #shoes-table th {
+    background-color: #0071e3;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  #shoes-table td {
+    font-size: 14px;
+    color: #1d1d1f;
+  }
+  
+  #shoes-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  #shoes-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
