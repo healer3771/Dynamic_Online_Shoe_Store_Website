@@ -16,7 +16,7 @@
   <header class="modern-header">
     <div class="header-content">
       <div class="logo">
-        <a href="home1.php">
+        <a href="home1s.php">
           <img src="images/Solocityshoe.png" alt="SoleCityShoes Logo">
         </a>
       </div>
