@@ -48,7 +48,7 @@ if (!$shoe) {
 <body>
     <header>
         <div class="logo">
-            <a href="home.php"><img src="images/Solocityshoe.png" alt="SoleCityShoes Logo"></a>
+            <a href="home.php"><img src="../images/Solocityshoe.png" alt="SoleCityShoes Logo"></a>
         </div>
         <nav>
             <ul>

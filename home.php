@@ -41,7 +41,7 @@ $shoes = $statement->fetchAll();
         <div class="header-content">
             <div class="logo">
                 <a href="home.php">
-                    <img src="images/Solocityshoe.png" alt="SoleCityShoes Logo">
+                    <img src="../images/Solocityshoe.png" alt="SoleCityShoes Logo">
                 </a>
             </div>
             <nav class="nav-links">
