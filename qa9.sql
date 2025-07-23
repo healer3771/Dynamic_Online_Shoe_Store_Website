@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 CREATE TABLE IF NOT EXISTS `categories` (
 `categoryID` int(11) NOT NULL,
   `categoryName` varchar(255) NOT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `categories`
@@ -50,7 +50,7 @@ CREATE TABLE IF NOT EXISTS `foo` (
   `id` int(11) NOT NULL,
   `gStr` varchar(10) DEFAULT NULL,
   `gInt` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `foo`
@@ -69,7 +69,7 @@ CREATE TABLE IF NOT EXISTS `orders` (
 `orderID` int(11) NOT NULL,
   `customerID` int(11) NOT NULL,
   `orderDate` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -83,7 +83,7 @@ CREATE TABLE IF NOT EXISTS `products` (
   `productCode` varchar(10) NOT NULL,
   `productName` varchar(255) NOT NULL,
   `listPrice` decimal(10,2) NOT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci AUTO_INCREMENT=12 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci AUTO_INCREMENT=12 ;
 
 --
 -- Dumping data for table `products`
@@ -111,7 +111,7 @@ CREATE TABLE IF NOT EXISTS `shoeCategories` (
 `shoeCategoryID` int(11) NOT NULL,
   `shoeCategoryName` varchar(255) NOT NULL,
   `dateAdded` datetime NOT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `shoeCategories`
@@ -136,7 +136,7 @@ CREATE TABLE IF NOT EXISTS `shoeManagers` (
   `password` varchar(255) NOT NULL,
   `firstName` varchar(60) NOT NULL,
   `lastName` varchar(60) NOT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `shoeManagers`
@@ -162,7 +162,7 @@ CREATE TABLE IF NOT EXISTS `shoes` (
   `description` text NOT NULL,
   `price` decimal(10,2) NOT NULL,
   `dateAdded` datetime NOT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci AUTO_INCREMENT=79 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci AUTO_INCREMENT=79 ;
 
 --
 -- Dumping data for table `shoes`
@@ -203,7 +203,7 @@ CREATE TABLE IF NOT EXISTS `student` (
   `state` varchar(2) DEFAULT NULL,
   `gpa` double DEFAULT NULL,
   `credits` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `student`
